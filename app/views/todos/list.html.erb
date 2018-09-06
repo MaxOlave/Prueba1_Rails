@@ -1,17 +1,17 @@
 <div class="row">
     <div class="col-md-6">
-      <% @completo.each do |todo| %>
+      <% @completo.each do |comp| %>
             <div class="well">
-              <p> <%= todo.description %> </p>
-              <p> <%= todo.complete %> </p>
+              <p> <%= comp.description %> </p>
+              <p> <%= comp.complete %> </p>
             </div>
       <% end %>
     </div>
     <div class="col-md-6">
-       <% @incompleto.each do |todo| %>
+       <% @incompleto.each do |inco| %>
             <div class="well">
-              <p> <%= todo.description %> </p>
-              <p> <%= todo.complete %> </p>
+              <p> <%= inco.description %> </p>
+              <p> <%= inco.complete %> </p>
             </div>
       <% end %>
 </div>
