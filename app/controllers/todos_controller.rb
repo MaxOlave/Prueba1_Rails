@@ -42,9 +42,9 @@ class TodosController < ApplicationController
     end
 
     def list
-     @todos = Todo.all
-     @completed = @todos.select{|i| i.complete = true }
-     @incompleted = @todos.select{|i| i.complete = false }
+     @listar = Todo.all
+     @completo = @listar.select{|i| i.complete = true }
+     @incompleto = @listar.select{|i| i.complete = false }
     end
 
   private

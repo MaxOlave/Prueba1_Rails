@@ -4,6 +4,6 @@
   <div class="well">
     <h2> <%= link_to todo.description, todo %> </h2>
     <p> <%= todo.complete %> </p>
-    <p> <%= link_to "Eliminar", todos_path, method: :delete %></p>
+    <p> <%= link_to "Eliminar", todo, method: :delete %></p>
   </div>
 <% end %>

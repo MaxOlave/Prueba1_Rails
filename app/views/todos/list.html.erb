@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6">
-      <% @completed.each do |todo| %>
+      <% @completo.each do |todo| %>
             <div class="well">
               <p> <%= todo.description %> </p>
               <p> <%= todo.complete %> </p>
@@ -8,7 +8,7 @@
       <% end %>
     </div>
     <div class="col-md-6">
-       <% @incompleted.each do |todo| %>
+       <% @incompleto.each do |todo| %>
             <div class="well">
               <p> <%= todo.description %> </p>
               <p> <%= todo.complete %> </p>
