@@ -1,0 +1,9 @@
+<h1>Todos</h1>
+
+<% @todos.each do |todo| %>
+  <div class="well">
+    <h2> <%= link_to todo.description, todo %> </h2>
+    <p> <%= todo.complete %> </p>
+    <p> <%= link_to "Eliminar", todos_path, method: :delete %></p>
+  </div>
+<% end %>
